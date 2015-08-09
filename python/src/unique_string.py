@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 def isUnique(word):
   if not word:
     return False
