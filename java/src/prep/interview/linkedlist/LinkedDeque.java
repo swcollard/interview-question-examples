@@ -1,6 +1,7 @@
+package prep.interview.linkedlist;
 
 /**
- *
+ * Implementation of a double ended queue using a doubly linked list
  */
 public class LinkedDeque {
 

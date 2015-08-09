@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!-- Taken from: http://ant.apache.org/manual/index.html -->
+<project name="Interview Prep Java" default="build">
+  <!-- set global properties for this build -->
+  <property name="src" location="src"/>
+  <property name="build" location="build"/>
+  <property name="test" location="tst"/>
+
+  <target name="init">
+    <!-- Create the time stamp -->
+    <tstamp/>
+    <!-- Create the build directory structure used by compile -->
+    <mkdir dir="${build}"/>
+    <mkdir dir="${build}/classes"/>
+    <mkdir dir="${build}/lib"/>
+  </target>
+
+  <target name="build" depends="init"
+        description="compile the source">
+    <!-- Compile the java code from ${src} into ${build} -->
+    <javac srcdir="${src}" destdir="${build}/classes"/>
+    <jar jarfile="${build}/lib/InterviewPrep.jar" basedir="${build}/classes"/>
+  </target>
+
+  <target name="clean" >
+    <delete dir="${build}"/>
+  </target>
+</project>
+
