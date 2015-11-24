@@ -11,13 +11,12 @@ public class LinkedDequeTest {
 
     @Test
     public void evaluateDeque() {
-        System.out.println("Hello");
         LinkedDeque deque = new LinkedDeque();
         deque.insertFirst(1);
         deque.insertFirst(2);
         deque.insertFirst(3);
         deque.insertLast(4);
-        System.out.println(deque.toString());
-        assertEquals(5, 5);
+        assertEquals("3 2 1 4 ", deque.toString());
     }
+
 }

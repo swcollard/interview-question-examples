@@ -48,7 +48,6 @@
       <classpath>
         <pathelement location="${build}/classes"/>
       </classpath>
-      <formatter type="xml" />
       <batchtest todir="${build}">
         <fileset dir="${test}">
           <include name="**/*Test*.java" />
