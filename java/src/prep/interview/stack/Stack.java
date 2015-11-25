@@ -16,6 +16,7 @@ public class Stack {
     }
 
     private Node top = null;
+    private int size = 0;
 
     public void push(Object val) {
         if (val == null) {
@@ -23,6 +24,7 @@ public class Stack {
         }
         Node node = new Node(top, val);
         top = node;
+        size++;
     }
     
     public Object pop() {
@@ -31,7 +33,12 @@ public class Stack {
         }
         Object val = top.value;
         top = top.next;
+        size--;
         return val;
+    }
+
+    public int getSize() {
+        return size;
     }
 
     @Override
