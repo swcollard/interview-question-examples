@@ -1,6 +1,7 @@
 package prep.interview.stack;
 
 import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
 
 /**
@@ -8,10 +9,10 @@ import org.junit.Test;
  */
 public class StackTest {
 
-    @Test
-    public void evaluateStack() {
-        Stack stack = new Stack();
-        stack.push("1");
-        assertEquals("1", (String) stack.pop());
-    }
+  @Test
+  public void evaluateStack() {
+    Stack stack = new Stack();
+    stack.push("1");
+    assertEquals("1", (String) stack.pop());
+  }
 }
