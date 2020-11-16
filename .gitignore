@@ -29,4 +29,7 @@
 
 # Build Directories
 java/build
+java/out
+java/*.iml
+java/.idea
 
